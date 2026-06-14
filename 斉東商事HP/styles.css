@@ -1,0 +1,129 @@
+/* PC、スマホ共通スタイル */
+* {
+  box-sizing: border-box;
+}
+p {
+  font-size: 15px;
+}
+body {
+  max-width: 2000px;
+  margin: 0 auto;
+  background-color: #F5F6F9;
+  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+}
+/*header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  background-color: #FFF;
+}
+.header-left {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0 10px 20px;
+}
+.header-left > img {
+  width: 65%;
+}
+.company-name > h1 {
+  font-size: 30px;
+  font-weight: 550;
+  letter-spacing: 5px;
+}
+.company-name > h3 {
+  font-size: 12px;
+}
+.header-right {
+  display: flex;
+  gap: 40px;
+}
+.nav-pc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.header-ask {
+  background-color: #f30000;
+  color: #FFF;
+  text-align: center;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.header-ask > p {
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+.ask-top {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+}
+.ask-top > p {
+  font-size: 15px;
+}
+.nav-pc > li:hover {
+  padding-top: 5px;
+  text-decoration: underline;
+}
+/*footer*/
+footer {
+  background-color: #f30000;
+  color: #FFF;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px;
+}
+.footer-left-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer-left-1 > p {
+  font-size: 12px;
+}
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+
+}
+.footer-right > p {
+  margin-top: 5px;
+  font-size: 9px;
+}
+.footer-right-1 {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.footer-right-1 > p {
+  font-size: 20px;
+}
+.e-mail {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  gap: 5px;
+  background-color: #FFF;
+  color: #333;
+  padding: 15px;
+}
+.e-mail > i {
+  font-size: 25px;
+}
