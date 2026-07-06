@@ -1,0 +1,155 @@
+/* PC、スマホ共通スタイル */
+* {
+  box-sizing: border-box;
+}
+p {
+  font-size: 15px;
+}
+body {
+  max-width: 2000px;
+  margin: 0 auto;
+  background-color: #F5F6F9;
+  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+}
+/*header*/
+header {
+  height: 90px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0;
+  padding: 0 5%;
+
+  background-color: #fff;
+
+  box-shadow: 0 3px 14px rgba(0,0,0,.06);
+}
+.header-left {
+  width: 220px;
+
+  display: flex;
+  align-items: center;
+
+  margin: 0;
+}
+.header-left > img {
+  width: 100%;
+}
+.company-name > h1 {
+  font-size: 30px;
+  font-weight: 550;
+  letter-spacing: 5px;
+}
+.company-name > h3 {
+  font-size: 12px;
+}
+.header-right {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.nav-pc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.header-ask {
+  background-color: #f30000;
+  color: #FFF;
+  text-align: center;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.header-ask > p {
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+.ask-top {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+}
+.ask-top > p {
+  font-size: 15px;
+}
+.nav-pc > li:hover {
+  padding-top: 5px;
+  text-decoration: underline;
+}
+/*footer*/
+footer {
+  background-color: #f30000;
+  color: #fff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 30px 5%;
+}
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0;
+}
+.footer-left > i {
+  font-size: 34px;
+}
+.footer-left-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer-left-1 > p {
+  font-size: 12px;
+}
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+.footer-right > p {
+  margin-top: 5px;
+  font-size: 9px;
+}
+.footer-right-1 {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.footer-right-1 > p {
+  font-size: 20px;
+}
+.e-mail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  border-radius: 30px;
+
+  background-color: #fff;
+  color: #333;
+
+  padding: 14px 24px;
+
+  transition: .3s;
+}
+.e-mail:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,.18);
+}
+.e-mail > i {
+  font-size: 25px;
+}

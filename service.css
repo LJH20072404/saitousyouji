@@ -1,0 +1,109 @@
+/* service page */
+.service-hero {
+  height: 360px;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.65), rgba(0,0,0,.2)),
+    url("img/cu.jfif") center / cover no-repeat;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 8%;
+  color: #fff;
+}
+
+.service-hero-text h1 {
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin: 12px 0 20px;
+}
+
+.service-hero-text p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.section-en {
+  color: #f30000;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.service-hero .section-en {
+  color: #fff;
+}
+
+.service-intro {
+  max-width: 900px;
+  margin: 90px auto 70px;
+  padding: 0 5%;
+  text-align: center;
+}
+
+.service-intro h2 {
+  font-size: 34px;
+  font-weight: 700;
+  margin: 18px 0 25px;
+}
+
+.service-intro p {
+  line-height: 2;
+  color: #555;
+}
+
+.service-list {
+  max-width: 1100px;
+  margin: 0 auto 100px;
+  padding: 0 5%;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+  margin-bottom: 80px;
+
+  background-color: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.service-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.service-img {
+  width: 50%;
+  height: 320px;
+}
+
+.service-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-text {
+  width: 50%;
+  padding: 40px;
+}
+
+.service-text span {
+  color: #f30000;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.service-text h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 18px 0;
+}
+
+.service-text p {
+  line-height: 1.9;
+  color: #555;
+}
+

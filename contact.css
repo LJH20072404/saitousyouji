@@ -1,0 +1,277 @@
+.company-page {
+    background: #f7f8fa;
+    color: #222;
+    overflow: hidden;
+}
+
+/* 上半部分 */
+.company-hero {
+    display: flex;
+    min-height: 420px;
+    position: relative;
+}
+
+.company-hero-text {
+    width: 55%;
+    padding: 70px 0 80px 70px;
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(105deg, #fff 0%, #fff 78%, transparent 78%);
+}
+
+.section-en {
+    font-size: 56px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.035);
+    letter-spacing: 4px;
+    margin-bottom: -20px;
+}
+
+.company-hero h1 {
+    font-size: 58px;
+    font-weight: 800;
+    letter-spacing: 6px;
+    margin-bottom: 18px;
+}
+
+.company-hero h1 span {
+    color: #c92828;
+}
+
+.catch {
+    font-size: 22px;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.catch::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 4px;
+    background: #c92828;
+    margin-top: 18px;
+}
+
+.lead {
+    font-size: 16px;
+    line-height: 2;
+}
+
+.company-hero-img {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 470px;
+}
+
+.company-hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 白色大卡片 */
+.company-card {
+    width: 94%;
+    margin: -60px auto 80px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    padding: 34px 36px;
+    display: grid;
+    grid-template-columns: 47% 53%;
+    gap: 34px;
+    position: relative;
+    z-index: 5;
+}
+
+/* 左侧公司概要 */
+.company-info {
+    display: flex;
+    gap: 32px;
+    border-right: 1px solid #d8d8d8;
+    padding-right: 28px;
+}
+
+.side-photo-list {
+    width: 150px;
+}
+
+.side-photo {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.side-photo img {
+    width: 130px;
+    height: 82px;
+    object-fit: cover;
+}
+
+.side-photo span {
+    position: absolute;
+    left: -20px;
+    top: -10px;
+    width: 42px;
+    height: 42px;
+    background: #c92828;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-table {
+    flex: 1;
+}
+
+.company-card h2 {
+    font-size: 24px;
+    margin-bottom: 22px;
+    position: relative;
+    padding-left: 18px;
+}
+
+.company-card h2::before {
+    content: "";
+    width: 3px;
+    height: 26px;
+    background: #c92828;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.profile-table dl div {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-table dt {
+    font-weight: 500;
+}
+
+.profile-table dd {
+    line-height: 1.7;
+}
+
+/* 右侧地图 */
+.company-access h2::before {
+    content: "📍";
+    background: none;
+    width: auto;
+    height: auto;
+    color: #c92828;
+    font-size: 28px;
+    top: -2px;
+}
+
+.map-box {
+    height: 300px;
+    background: #eee;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 28px;
+}
+
+.map-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.map-pin {
+    position: absolute;
+    right: 25%;
+    top: 38%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #c92828;
+    font-weight: bold;
+}
+
+.map-pin span {
+    font-size: 40px;
+}
+
+.map-pin small {
+    color: #333;
+    font-weight: normal;
+}
+
+/* 交通说明 */
+.access-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.access-item {
+    padding: 0 24px;
+    border-right: 1px solid #ddd;
+}
+
+.access-item:last-child {
+    border-right: none;
+}
+
+.access-item span {
+    font-size: 30px;
+}
+
+.access-item h3 {
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+.access-item p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* 响应式 */
+@media (max-width: 900px) {
+    .company-hero {
+        display: block;
+    }
+
+    .company-hero-text {
+        width: 100%;
+        padding: 50px 24px;
+        background: #fff;
+    }
+
+    .company-hero-img {
+        position: static;
+        width: 100%;
+        height: 260px;
+    }
+
+    .company-card {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+        padding: 24px;
+    }
+
+    .company-info {
+        border-right: none;
+        padding-right: 0;
+    }
+
+    .access-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .access-item {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 16px;
+    }
+}

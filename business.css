@@ -1,0 +1,182 @@
+/* business page */
+.business-hero {
+  height: 360px;
+  background:
+    linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+    url("img/business-hero.jpg") center / cover no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  text-align: center;
+}
+
+.business-hero-text h1 {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 6px;
+}
+
+.business-hero-text p {
+  margin-top: 16px;
+  font-size: 16px;
+  letter-spacing: 4px;
+}
+
+/* title */
+.flow-section {
+  padding: 90px 5%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.section-title p {
+  color: #f30000;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+.section-title h2 {
+  margin-top: 10px;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+/* timeline */
+.flow-timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.flow-timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 3px;
+  height: 100%;
+  background-color: #f30000;
+  transform: translateX(-50%);
+}
+
+.flow-item {
+  position: relative;
+  width: 50%;
+  padding: 0 50px 60px;
+}
+
+.flow-item:nth-child(odd) {
+  margin-right: auto;
+  text-align: right;
+}
+
+.flow-item:nth-child(even) {
+  margin-left: auto;
+}
+
+.flow-number {
+  position: absolute;
+  top: 0;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+
+  background-color: #f30000;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.flow-item:nth-child(odd) .flow-number {
+  right: -29px;
+}
+
+.flow-item:nth-child(even) .flow-number {
+  left: -29px;
+}
+
+.flow-card {
+  background-color: #fff;
+  padding: 34px;
+  border-radius: 16px;
+
+  display: flex;
+  gap: 22px;
+  align-items: flex-start;
+
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+}
+
+.flow-item:nth-child(odd) .flow-card {
+  flex-direction: row-reverse;
+}
+
+.flow-card i {
+  font-size: 38px;
+  color: #f30000;
+  flex-shrink: 0;
+}
+
+.flow-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.flow-card p {
+  line-height: 1.9;
+  color: #555;
+}
+
+/* contact */
+.flow-contact {
+  background-color: #fff;
+  text-align: center;
+  padding: 80px 5%;
+}
+
+.flow-contact h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.flow-contact p {
+  margin-top: 18px;
+  color: #555;
+}
+
+.flow-contact a {
+  display: inline-block;
+  margin-top: 36px;
+  padding: 16px 42px;
+
+  background-color: #f30000;
+  color: #fff;
+  border-radius: 40px;
+
+  font-weight: bold;
+  letter-spacing: 2px;
+
+  transition: .3s;
+}
+
+.flow-contact a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0,0,0,.18);
+}
+
