@@ -275,3 +275,78 @@
         padding-bottom: 16px;
     }
 }
+@media (max-width: 768px) {
+
+  .company-hero-text {
+    padding: 42px 20px;
+  }
+
+  .section-en {
+    font-size: 32px;
+    margin-bottom: -10px;
+  }
+
+  .company-hero h1 {
+    font-size: 38px;
+  }
+
+  .catch {
+    font-size: 18px;
+  }
+
+  .company-hero-img {
+    height: 220px;
+  }
+
+  .company-card {
+    width: 92%;
+    padding: 22px 18px;
+    margin: 30px auto 60px;
+  }
+
+  .company-info {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .side-photo-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .side-photo {
+    margin-bottom: 0;
+  }
+
+  .side-photo img {
+    width: 100%;
+    height: 100px;
+  }
+
+  .profile-table dl div {
+    grid-template-columns: 80px 1fr;
+    gap: 10px;
+  }
+
+  .company-access iframe {
+    width: 100%;
+    height: 280px;
+  }
+}
+/* iframe 修正：让地图跟右侧区域宽度一致 */
+.company-access iframe {
+  width: 100%;
+  height: 300px;
+  display: block;
+  margin-bottom: 28px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .company-access iframe {
+    width: 100%;
+    height: 280px;
+  }
+}

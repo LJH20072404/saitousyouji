@@ -569,3 +569,105 @@
 .delay4{
     transition-delay: .4s;
 }
+/* =========================
+   首页 手机端
+========================= */
+@media (max-width: 768px) {
+
+  .front-message {
+    padding: 70px 6% 40px;
+  }
+
+  .front-message-top {
+    gap: 24px;
+  }
+
+  .front-message-top > h1 {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+
+  .front-message-bottom {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .messages {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 16px 20px;
+  }
+
+  .main-message,
+  .pickup,
+  .Selling-Process,
+  .advantage {
+    width: 92%;
+    margin: 60px auto;
+    padding: 40px 18px;
+  }
+
+  .main-message > h1,
+  .pickup > h1,
+  .Selling-Process > h1,
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 34px;
+  }
+
+  .main-message-subfolder {
+    grid-template-columns: 1fr;
+  }
+
+  .card-top {
+    min-height: auto;
+  }
+
+  .pickup-message {
+    flex-direction: column;
+    gap: 34px;
+  }
+
+  .pickup-card {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .pickup-card > i {
+    transform: rotate(90deg);
+  }
+
+  .sp-card-top,
+  .sp-card-bottom {
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .sp-card {
+    width: 100%;
+  }
+
+  .advantage-item,
+  .advantage-item.reverse {
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 56px;
+  }
+
+  .advantage-text,
+  .advantage-item img {
+    width: 100%;
+  }
+
+  .advantage-number {
+    font-size: 54px;
+  }
+
+  .advantage-text h3 {
+    font-size: 24px;
+  }
+
+  .advantage-item img {
+    height: 220px;
+  }
+}
